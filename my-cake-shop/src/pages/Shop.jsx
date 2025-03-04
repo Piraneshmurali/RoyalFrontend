@@ -35,7 +35,7 @@ const Shop = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:5000/api/customer/cakes"
+          "https://royalbakeryjaffna.com:5000/api/customer/cakes"
         );
         setCakes(response.data);
         setError(null);

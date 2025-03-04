@@ -16,7 +16,7 @@ const BlogList = () => {
     const fetchBlogs = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:5000/api/blogs");
+        const response = await fetch("https://royalbakeryjaffna.com:5000/api/blogs");
         const data = await response.json();
         setBlogs(data);
         setError(null);

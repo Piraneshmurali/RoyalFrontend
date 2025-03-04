@@ -13,7 +13,7 @@ const BlogDetail = () => {
     const fetchBlog = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const response = await fetch(`https://royalbakeryjaffna.com:5000/api/blogs/${id}`);
 
         // Log the response status
         console.log("Response status:", response);

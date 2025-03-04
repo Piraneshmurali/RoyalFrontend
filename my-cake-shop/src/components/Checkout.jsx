@@ -40,7 +40,7 @@ const Checkout = () => {
       }));
 
       // for (const order of orders) {
-      const res = await axios.post("http://localhost:5000/api/customer/order", {
+      const res = await axios.post("https://royalbakeryjaffna.com:5000/api/customer/order", {
         orders,
       });
       // }
@@ -116,9 +116,9 @@ const Checkout = () => {
 
         <Form form={form} onFinish={handleSubmitOrder}>
           <div className="bg-[#1C1C1D] p-6 rounded-lg shadow-lg mb-8">
-            <h1className="text-2xl cormorant-garamond-medium  text-white mb-4">
+            <h1 className="text-2xl cormorant-garamond-medium  text-white mb-4">
               Your Order
-            </span>
+            </h1>
             {cart.map((cake, index) => (
               <div
                 key={index}

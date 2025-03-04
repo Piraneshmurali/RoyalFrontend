@@ -17,7 +17,7 @@ const CakeList = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:5000/api/customer/cakes"
+          "https://royalbakeryjaffna.com:5000/api/customer/cakes"
         );
         setCakes(response.data);
         setVisibleCakes(response.data.slice(0, 4)); // Display only the first 4 cakes initially
